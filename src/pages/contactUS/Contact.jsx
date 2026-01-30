@@ -123,7 +123,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-2 w-fit rounded-md bg-[#d0d0d0] px-4 py-2 text-[#4a4a4a] transition-colors hover:bg-[#c0c0c0]"
+                className="mt-2 w-fit rounded-md bg-[#0066FF] px-4 py-2 text-[#4a4a4a] transition-colors hover:bg-[#c0c0c0]"
               >
                 See Learning Benefits &rarr;
               </button>
