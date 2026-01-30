@@ -1,0 +1,29 @@
+|-- .gitignore
+|-- eslint.config.js
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- public
+    |-- vite.svg
+|-- README.md
+|-- src
+    |-- App.css
+    |-- App.jsx
+    |-- components
+        |-- Footer.jsx
+        |-- Header.jsx
+        |-- Hero.jsx
+    |-- index.css
+    |-- layouts
+        |-- RootLayout.jsx
+    |-- main.jsx
+    |-- pages
+        |-- about
+            |-- About.jsx
+        |-- collegeuniversity
+            |-- Collegeanduniversitypage.jsx
+        |-- home
+            |-- Home.jsx
+        |-- schools
+            |-- Schoolpage.jsx
+|-- vite.config.js
