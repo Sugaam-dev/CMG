@@ -5,6 +5,7 @@ import Home from "./pages/home/Home";
 import About from './pages/about/About';
 import School from './pages/schools/Schoolpage';
 import Collegeanduniversitypage from './pages/collegeuniversity/Collegeanduniversitypage';
+import StudentsAndParents from './pages/studentsandparents/StudentsAndParents';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
           <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />
                    <Route path='about' element={<About/>} />
-                   <Route path='schools' element={<School/>} />
+                   <Route path='school' element={<School/>} />
                    <Route path='CollegeUniversity' element={<Collegeanduniversitypage/>} />
+                    <Route path='studentsandparents' element={<StudentsAndParents/>} />
 
           </Route>
         </Routes>
