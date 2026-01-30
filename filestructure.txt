@@ -20,10 +20,14 @@
     |-- pages
         |-- about
             |-- About.jsx
+        |-- collegeuniversity
+            |-- Collegeanduniversitypage.jsx
         |-- contactUS
             |-- Contact.jsx
         |-- home
             |-- Home.jsx
+        |-- schools
+            |-- Schoolpage.jsx
         |-- studentsandparents
             |-- StudentsAndParents.jsx
 |-- vite.config.js
