@@ -6,7 +6,7 @@ import About from './pages/about/About';
 import School from './pages/schools/Schoolpage';
 import Collegeanduniversitypage from './pages/collegeuniversity/Collegeanduniversitypage';
 import StudentsAndParents from './pages/studentsandparents/StudentsAndParents';
-import Contact from './pages/contactus/Contact';
+import Contact from './pages/contact/Contact';
 
 function App() {
   return (
