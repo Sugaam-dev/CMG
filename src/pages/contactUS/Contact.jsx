@@ -32,11 +32,20 @@ export default function Contact() {
           Let's strengthen education systems{" "}
           <span className="italic">together</span>.
         </p>
+
+         {/* Decorative Underline */}
+        <div className="mx-auto mt-8 max-w-30xl px-4">
+          <div className="relative">
+            <div className="h-px w-full bg-gradient-to-r from-[#d8d8d8] via-[#c0c0c0] to-[#d8d8d8]" />
+            <div className="absolute left-0 top-1/2  -translate-y-1/2 rounded-full bg-[#b0b0b0]" />
+            <div className="absolute right-0 top-1/2  -translate-y-1/2 rounded-full bg-[#b0b0b0]" />
+          </div>
+        </div>
       </section>
 
       {/* Contact Form Section */}
       <section className="mx-auto max-w-5xl px-4 py-8">
-        <div className="rounded-sm border border-[#e0e0e0] bg-[#fafafa] p-6 shadow-sm md:p-8">
+        <div className="rounded-sm border border-[#f7f3f3] bg-[#fafafa] p-6 shadow-sm md:p-8">
           <div className="grid gap-8 md:grid-cols-2">
             {/* Left - Form */}
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
@@ -123,7 +132,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-2 w-fit rounded-md bg-[#0066FF] px-4 py-2 text-[#4a4a4a] transition-colors hover:bg-[#c0c0c0]"
+                className="mt-2 w-fit rounded-md bg-[#0066FF] px-4 py-2 text-[#fdf7f7] transition-colors hover:bg-[#0066FF]"
               >
                 See Learning Benefits &rarr;
               </button>
@@ -287,7 +296,7 @@ export default function Contact() {
               <p className="mt-3 text-[#6b6b6b]">
                 Download academic papers, case studies, or explore iBOOKGPT.
               </p>
-              <button className="mt-4 rounded-md border border-[#d0d0d0] bg-transparent px-4 py-2 text-[#4a4a4a] transition-colors hover:bg-[#f5f5f5]">
+              <button className="mt-4 rounded-md border  border-[#0066FF] bg-transparent px-4 py-2 text-[#0066FF] transition-colors hover:bg-[#f5f5f5]">
                 View Resources &rarr;
               </button>
             </div>
@@ -301,7 +310,7 @@ export default function Contact() {
                 Join an outstanding team of educators, psychologists, and tech
                 innovators.
               </p>
-              <button className="mt-4 rounded-md border border-[#d0d0d0] bg-transparent px-4 py-2 text-[#4a4a4a] transition-colors hover:bg-[#f5f5f5]">
+              <button className="mt-4 rounded-md border border-[#0066FF] bg-transparent px-4 py-2 text-[#0066FF] transition-colors hover:bg-[#f5f5f5]">
                 View Open Roles &rarr;
               </button>
             </div>

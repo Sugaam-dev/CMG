@@ -1,172 +1,152 @@
+import { ChevronRight } from "lucide-react";
 
-// import Image from 'next/image';
-// export default function Home() {
-//   return (
-//     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white">
-//       {/* Hero Section */}
-//       <section className="px-4 py-16 sm:py-24">
-//         <div className="max-w-4xl mx-auto text-center">
-//           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-//             Education does not fail due to <span className="text-[#0066FF]">lack</span> of effort.
-//           </h1>
-//           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-//             It fails due to lack of integration, visibility, and decision intelligence.
-//           </p>
-//         </div>
-//       </section>
+import schoolImage from "./images/school-building.jpg";
+import universityImage from "./images/university-building.jpg";
+import studentsImage from "./images/students-parents.jpg";
+import teacherImage from "./images/teacher-faculty.jpg";
 
-//       {/* Four Cards Section */}
-//       <section className="px-4 py-16">
-//         <div className="max-w-6xl mx-auto">
-//           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-//             {/* Schools Card */}
-//             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-//               <div className="relative w-full h-48">
-//                 <Image
-//                   // src="/images/schools-illustration.jpg"
-//                   alt="Schools K-12"
-//                   fill
-//                   className="object-cover"
-//                 />
-//               </div>
-//               <div className="p-6">
-//                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
-//                   Schools (K-12) <span className="text-orange-500">›</span>
-//                 </h2>
-//                 <ul className="space-y-2 mb-6">
-//                   <li className="text-gray-700">• Outcome ownership</li>
-//                   <li className="text-gray-700">• Teacher enablement</li>
-//                   <li className="text-gray-700">• Parent trust</li>
-//                   <li className="text-gray-700">• Student readiness</li>
-//                 </ul>
-//                 <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded transition">
-//                   Explore Schools ›
-//                 </button>
-//               </div>
-//             </div>
-
-//             {/* Colleges Card */}
-//             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-//               <div className="relative w-full h-48">
-//                 <Image
-//                   // src="/images/colleges-illustration.jpg"
-//                   alt="Colleges & Universities"
-//                   fill
-//                   className="object-cover"
-//                 />
-//               </div>
-//               <div className="p-6">
-//                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
-//                   Colleges & Universities <span className="text-[#0066FF]">›</span>
-//                 </h2>
-//                 <ul className="space-y-2 mb-6">
-//                   <li className="text-gray-700">• Student intelligence</li>
-//                   <li className="text-gray-700">• Accreditation readiness</li>
-//                   <li className="text-gray-700">• Governance dashboards</li>
-//                   <li className="text-gray-700">• Career outcomes</li>
-//                 </ul>
-//                 <button className="bg-[#0066FF] hover:bg-blue-700 text-white px-4 py-2 rounded transition">
-//                   Explore Universities ›
-//                 </button>
-//               </div>
-//             </div>
-
-//             {/* Students & Parents Card */}
-//             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-//               <div className="relative w-full h-48">
-//                 <Image
-//                   // src="/images/students-parents-illustration.jpg"
-//                   alt="Students & Parents"
-//                   fill
-//                   className="object-cover"
-//                 />
-//               </div>
-//               <div className="p-6">
-//                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
-//                   Students & Parents <span className="text-teal-500">›</span>
-//                 </h2>
-//                 <ul className="space-y-2 mb-6">
-//                   <li className="text-gray-700">• Clarity & confidence</li>
-//                   <li className="text-gray-700">• Psychometric insights</li>
-//                   <li className="text-gray-700">• Academic readiness</li>
-//                   <li className="text-gray-700">• Visibility without pressure</li>
-//                 </ul>
-//                 <button className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded transition">
-//                   Explore Schools ›
-//                 </button>
-//               </div>
-//             </div>
-
-//             {/* Teachers & Faculty Card */}
-//             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-//               <div className="relative w-full h-48">
-//                 <Image
-//                   // src="/images/teachers-faculty-illustration.jpg"
-//                   alt="Teachers & Faculty"
-//                   fill
-//                   className="object-cover"
-//                 />
-//               </div>
-//               <div className="p-6">
-//                 <h2 className="text-2xl font-bold text-red-700 mb-4">
-//                   Teachers & Faculty <span className="text-red-600">›</span>
-//                 </h2>
-//                 <ul className="space-y-2 mb-6">
-//                   <li className="text-gray-700">• Reduced academic load</li>
-//                   <li className="text-gray-700">• AI-supported mentoring</li>
-//                   <li className="text-gray-700">• Learning gap visibility</li>
-//                   <li className="text-gray-700">• Outcome alignment</li>
-//                 </ul>
-//                 <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition">
-//                   Explore Teachers & Faculty ›
-//                 </button>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* The Future Section */}
-//       <section className="px-4 py-16 bg-gray-50">
-//         <div className="max-w-6xl mx-auto">
-//           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-//             <div>
-//               <h2 className="text-4xl font-bold text-gray-900 mb-6">THE FUTURE</h2>
-//               <p className="text-xl text-gray-700 mb-4 leading-relaxed">
-//                 The future of education is systems and decisions, not just coaching.
-//               </p>
-//               <p className="text-lg text-gray-600 leading-relaxed">
-//                 Institutions that own outcomes will lead.
-//               </p>
-//             </div>
-//             <div className="relative w-full h-64 md:h-80">
-//               <Image
-//                 // src="/images/future-section-illustration.jpg"
-//                 alt="The Future of Education"
-//                 fill
-//                 className="object-cover rounded-lg"
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-
+const cardsData = [
+  {
+    id: 1,
+    title: "Schools (K-12)",
+    image: schoolImage,
+    points: [
+      "Outcome ownership",
+      "Teacher enablement",
+      "Parent trust",
+      "Student readiness",
+    ],
+    buttonText: "Explore Schools",
+    buttonColor: "bg-[#0066FF] text-white border border-[#ddd]",
+  },
+  {
+    id: 2,
+    title: "Colleges & Universities",
+    image: universityImage,
+    points: [
+      "Student intelligence",
+      "Accreditation readiness",
+      "Governance dashboards",
+      "Career outcomes",
+    ],
+    buttonText: "Explore Universities",
+    buttonColor: "bg-[#0066FF] text-white border border-[#ddd]",
+  },
+  {
+    id: 3,
+    title: "Students",
+    image: studentsImage,
+    points: [
+      "Clarity & confidence",
+      "Psychometric insights",
+      "Academic readiness",
+      "Visibility without pressure",
+    ],
+    buttonText: "Explore Schools",
+    buttonColor: "bg-[#0066FF] text-white border border-[#ddd]",
+  },
+  {
+    id: 4,
+    title: "Parents",
+    image: teacherImage,
+    titleColor: "text-[#8B0000]",
+    points: [
+      "Reduced academic load",
+      "AI-supported mentoring",
+      "Learning gap visibility",
+      "Outcome alignment",
+    ],
+    buttonText: "Explore Teachers & Faculty",
+    buttonColor: "bg-[#0066FF] text-white",
+  },
+];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="w-full max-w-3xl text-center">
-        <h1 className="text-4xl font-semibold tracking-tight text-foreground md:text-5xl lg:text-6xl">
-          Education does not fail due to{' '}
-          <span className="text-accent">lack</span> of effort.
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-          It fails due to lack of integration, visibility, and decision intelligence.
-        </p>
-      </div>
+    <main className="min-h-screen bg-[#f8f5f5]">
+      {/* Hero Section */}
+      <section className="flex min-h-[50vh] items-center justify-center bg-[#f8f5f5] px-4 py-16">
+        <div className="w-full max-w-3xl text-center">
+          <h1 className="text-3xl font-semibold tracking-tight text-[#333] md:text-4xl lg:text-5xl">
+            Education does not fail due to{" "}
+            <span className="text-[#8B0000]">lack</span> of effort.
+          </h1>
+          <p className="mt-6 text-lg text-[#666] md:text-xl">
+            It fails due to lack of integration, visibility, and decision
+            intelligence.
+          </p>
+        </div>
+      </section>
+
+      {/* Cards Section */}
+      <section
+        className="px-4 py-16"
+        style={{
+          background:
+            "linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 50%, #e0f2fe 100%)",
+        }}
+      >
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
+          {cardsData.map((card) => (
+            <div
+              key={card.id}
+              className="rounded-2xl bg-white/90 p-6 shadow-sm backdrop-blur-sm transition-shadow hover:shadow-md"
+            >
+              {/* Card Image */}
+              <div className="mb-4 flex justify-center">
+                <div className="h-32 w-40 overflow-hidden rounded-lg">
+                  <img
+                    src={card.image || "/placeholder.svg"}
+                    alt={card.title}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Card Title */}
+              <h3
+                className={`mb-4 flex items-center gap-1 text-xl font-semibold ${card.titleColor || "text-[#333]"}`}
+              >
+                {card.title}
+                <ChevronRight className="h-5 w-5" />
+              </h3>
+
+              {/* Card Points */}
+              <ul className="mb-6 space-y-2">
+                {card.points.map((point, index) => (
+                  <li key={index} className="flex items-start gap-2 text-[#555]">
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#999]" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Card Button */}
+              <button
+                className={`inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-colors ${card.buttonColor}`}
+              >
+                {card.buttonText}
+                <ChevronRight className="h-4 w-4" />
+              </button>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* THE FUTURE Section */}
+      <section className="bg-[#f8f5f5] px-4 py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-6 text-xl font-semibold tracking-widest text-[#333]">
+            THE FUTURE
+          </h2>
+          <p className="text-lg text-[#555] md:text-xl">
+            The future of education is systems and decisions, not just coaching.
+          </p>
+          <p className="mt-4 text-lg text-[#555] md:text-xl">
+            Institutions that own outcomes will lead.
+          </p>
+        </div>
+      </section>
     </main>
-  )
+  );
 }

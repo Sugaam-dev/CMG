@@ -26,6 +26,11 @@
             |-- Contact.jsx
         |-- home
             |-- Home.jsx
+            |-- images
+                |-- school-building.jpg
+                |-- students-parents.jpg
+                |-- teacher-faculty.jpg
+                |-- university-building.jpg
         |-- schools
             |-- Schoolpage.jsx
         |-- studentsandparents
