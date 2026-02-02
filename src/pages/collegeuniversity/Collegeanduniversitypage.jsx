@@ -1,4 +1,6 @@
 import React from "react";
+import campusImage from "./images/tattvacampus.png";
+import graphimage from "./images/graphimage.png";
 
 import {
   ChevronRight,
@@ -6,6 +8,15 @@ import {
   BarChart3,
   ClipboardCheck,
   TrendingUp,
+  Lightbulb,
+  Microscope,
+  Briefcase,
+  ArrowRight,
+  BookOpen,
+  Layers,
+  Brain,
+  LineChart,
+  Target,
 } from "lucide-react";
 
 export default function CollegeUniversityPage() {
@@ -28,11 +39,11 @@ export default function CollegeUniversityPage() {
         <div className="mx-auto max-w-4xl text-center">
           {/* Section title with divider lines */}
           <div className="my-6 flex items-center justify-center gap-6">
-            <div className="h-px w-24 bg-gray-400" />
+            <div className="h-px w-24 sm:w-24 lg:w-32 bg-gray-400" />
             <h2 className="text-lg font-medium tracking-widest text-gray-800">
               SYSTEMS, NOT SERVICES
             </h2>
-            <div className="h-px w-24 bg-gray-400" />
+            <div className="h-px w-24 sm:w-24 lg:w-32 bg-gray-400" />
           </div>
 
           {/* Subtitle */}
@@ -45,52 +56,24 @@ export default function CollegeUniversityPage() {
       {/* Student Intelligence Systems Section */}
       <section className="border-b border-gray-200 px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-8 text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-3xl">
-            STUDENT INTELLIGENCE SYSTEMS
-          </h2>
+          <div className="my-10 flex items-center justify-center gap-6">
+            <div className="h-px w-32 sm:w-24 lg:w-32 bg-gray-300" />
+            <h2 className="text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-3xl">
+              STUDENT INTELLIGENCE SYSTEMS
+            </h2>
+            <div className="h-px w-32 sm:w-24 lg:w-32 bg-gray-300" />
+          </div>
 
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             {/* CMG System Card */}
             <div className="flex flex-col justify-center">
-              <div className="rounded-lg border border-gray-300 bg-gray-50 p-6 sm:p-8">
-                <div className="mb-4 flex items-center justify-between">
-                  <h3 className="font-semibold text-gray-900">
-                    CMG STUDENT INTELLIGENCE SYSTEM
-                  </h3>
-                  <span className="text-xl text-gray-400">•••</span>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex gap-4">
-                    {/* Mock Chart */}
-                    <div className="flex-1">
-                      <div className="aspect-square rounded border border-gray-300 bg-white p-4">
-                        <div className="flex h-full items-end justify-between gap-1">
-                          <div className="h-1/3 w-1 bg-gray-300"></div>
-                          <div className="h-1/2 w-1 bg-gray-400"></div>
-                          <div className="h-2/3 w-1 bg-gray-400"></div>
-                          <div className="h-3/4 w-1 bg-gray-500"></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Features List */}
-                    <div className="flex-1 space-y-2 text-sm">
-                      <p className="text-gray-700">• Aptitude Signal</p>
-                      <p className="text-gray-700">• Placement Readiness</p>
-                      <p className="text-gray-700">
-                        • Mental & Academic Stability
-                      </p>
-                      <p className="text-gray-700">• Low-Visibility Students</p>
-                      <p className="text-gray-700">• Real-Time Reports</p>
-                    </div>
-                  </div>
-
-                  <div className="border-t border-gray-300 pt-3">
-                    <p className="text-xs text-gray-500">
-                      Boards: JEE NEET CUET
-                    </p>
-                  </div>
+              <div className="rounded-lg border border-gray-300 bg-gray-50 p-0">
+                <div className="w-full h-full overflow-hidden rounded-lg">
+                  <img
+                    src={graphimage}
+                    alt="CMG Student Intelligence Graph"
+                    className="block w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -98,19 +81,19 @@ export default function CollegeUniversityPage() {
             {/* Benefits List */}
             <div className="space-y-4">
               <div className="flex gap-3">
-                <div className="flex-shrink-0 text-gray-600">■</div>
+                <div className="shrink-0 text-gray-600">■</div>
                 <p className="text-gray-700">
                   One-touch insights into student decision readiness
                 </p>
               </div>
               <div className="flex gap-3">
-                <div className="flex-shrink-0 text-gray-600">■</div>
+                <div className="shrink-0 text-gray-600">■</div>
                 <p className="text-gray-700">
                   Low-visibility alerts for differentiated mentoring
                 </p>
               </div>
               <div className="flex gap-3">
-                <div className="flex-shrink-0 text-gray-600">■</div>
+                <div className="shrink-0 text-gray-600">■</div>
                 <p className="text-gray-700">
                   Data signals on placement and employment probabilities
                 </p>
@@ -128,37 +111,60 @@ export default function CollegeUniversityPage() {
       {/* TATTVA Campus Section */}
       <section className="border-b border-gray-200 px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-8 text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-3xl">
-            TATTVA CAMPUS
-          </h2>
+          <div className="my-10 flex items-center justify-center gap-6">
+            <div className="h-px w-32 sm:w-24 lg:w-32 bg-gray-300" />
+            <h2 className="text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-3xl">
+              TATTVA CAMPUS
+            </h2>
+            <div className="h-px w-32 sm:w-24 lg:w-32 bg-gray-300" />
+          </div>
 
           <div className="grid gap-8 lg:grid-cols-2">
             {/* Illustration Placeholder */}
-            <div className="flex items-center justify-center rounded-lg border border-gray-300 bg-gray-50 p-8">
-              <div className="text-center text-gray-400">
-                <TrendingUp className="mx-auto mb-4 h-16 w-16" />
-                <p className="text-sm">Campus Lifecycle Platform</p>
-              </div>
+            <div className="flex items-center justify-center rounded-lg border border-gray-100 overflow-hidden">
+              <img
+                src={campusImage}
+                alt="Campus Lifecycle Platform"
+                className="w-full max-w-full h-auto object-contain"
+              />
             </div>
 
             {/* Features */}
             <div className="space-y-4">
               <div className="flex gap-3">
-                <div className="flex-shrink-0 text-gray-600">■</div>
+                <div className="shrink-0 text-gray-600">■</div>
                 <p className="text-gray-700">
                   End-to-end student lifecycle platform
                 </p>
               </div>
               <div className="flex gap-3">
-                <div className="flex-shrink-0 text-gray-600">■</div>
+                <div className="shrink-0 text-gray-600">■</div>
                 <p className="text-gray-700">
                   Accreditation readiness and governance dashboards
                 </p>
               </div>
               <div className="flex gap-3">
-                <div className="flex-shrink-0 text-gray-600">■</div>
+                <div className="shrink-0 text-gray-600">■</div>
                 <p className="text-gray-700">
                   Career intelligence linked to enrollment and placement rates
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <div className="shrink-0 text-gray-600">■</div>
+                <p className="text-gray-700">
+                  Institutional framework for academic quality and governance
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <div className="shrink-0 text-gray-600">■</div>
+                <p className="text-gray-700">
+                  OBE, CO-PO-PSO alignment and accreditation readiness
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <div className="shrink-0 text-gray-600">■</div>
+                <p className="text-gray-700">
+                  Audit-ready systems for continuous compliance and improvement
                 </p>
               </div>
             </div>
@@ -172,39 +178,47 @@ export default function CollegeUniversityPage() {
           <div className="grid gap-8 md:grid-cols-2">
             {/* K2C Column */}
             <div className="rounded-lg border border-gray-200 p-6 sm:p-8">
-              <h3 className="mb-6 text-center text-xl font-bold text-gray-900">
-                KNOWLEDGE TO CAREERS (K2C)
-              </h3>
+              <div className="mb-6 flex items-center justify-center gap-4">
+                <div className="h-px w-20 bg-gray-300" />
+                <h3 className="text-center text-xl font-bold text-gray-900">
+                  KNOWLEDGE TO CAREERS (K2C)
+                </h3>
+                <div className="h-px w-20 bg-gray-300" />
+              </div>
 
               {/* K2C Flow */}
-              <div className="mb-6 flex items-center justify-center gap-4 text-center">
+              <div className="mb-6 flex flex-wrap items-center justify-center gap-6 text-center">
                 <div className="text-gray-700">
-                  <div className="mb-2 text-2xl">🏫</div>
-                  <p className="text-sm font-semibold">Schools</p>
+                  <BookOpen className="mx-auto mb-2 h-7 w-7 text-red-600" />
+                  <p className="text-sm font-semibold">Knowledge</p>
                 </div>
-                <div className="text-gray-400">→</div>
+
+                <ArrowRight className="h-5 w-5 text-gray-400" />
+
                 <div className="text-gray-700">
-                  <div className="mb-2 text-2xl">🎓</div>
-                  <p className="text-sm font-semibold">Colleges</p>
+                  <Layers className="mx-auto mb-2 h-7 w-7 text-red-600" />
+                  <p className="text-sm font-semibold">Capability</p>
                 </div>
-                <div className="text-gray-400">→</div>
+
+                <ArrowRight className="h-5 w-5 text-gray-400" />
+
                 <div className="text-gray-700">
-                  <div className="mb-2 text-2xl">👥</div>
-                  <p className="text-sm font-semibold">Careers</p>
+                  <Briefcase className="mx-auto mb-2 h-7 w-7 text-red-600" />
+                  <p className="text-sm font-semibold">Career</p>
                 </div>
               </div>
 
               {/* K2C Benefits */}
               <div className="space-y-3 border-t border-gray-200 pt-4">
                 <div className="flex gap-3">
-                  <div className="flex-shrink-0 text-gray-600">■</div>
+                  <div className="shrink-0 text-gray-600">■</div>
                   <p className="text-sm text-gray-700">
                     Integrated academic & career ecosystem from K-12 to
                     University to Careers
                   </p>
                 </div>
                 <div className="flex gap-3">
-                  <div className="flex-shrink-0 text-gray-600">■</div>
+                  <div className="shrink-0 text-gray-600">■</div>
                   <p className="text-sm text-gray-700">
                     Continuity of intelligence across critical transitions
                   </p>
@@ -214,9 +228,13 @@ export default function CollegeUniversityPage() {
 
             {/* Accreditation Column */}
             <div className="rounded-lg border border-gray-200 p-6 sm:p-8">
-              <h3 className="mb-6 text-center text-xl font-bold text-gray-900">
-                ACCREDITATION & GOVERNANCE
-              </h3>
+              <div className="mb-6 flex items-center justify-center gap-4">
+                <div className="h-px w-20 bg-gray-300" />
+                <h3 className="text-center text-xl font-bold text-gray-900">
+                  ACCREDITATION & GOVERNANCE
+                </h3>
+                <div className="h-px w-20 bg-gray-300" />
+              </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 {/* Accreditation Card */}
@@ -259,80 +277,94 @@ export default function CollegeUniversityPage() {
         </div>
       </section>
 
-      
-
-      {/* K2C and Accreditation Section */}
+      {/* PSYCHOMETRICS */}
       <section className="border-b border-gray-200 px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-2">
-            {/* K2C Column */}
+            {/* PSYCHOMETRICS */}
             <div className="rounded-lg border border-gray-200 p-6 sm:p-8">
-              <h3 className="mb-6 text-center text-xl font-bold text-gray-900">
-                KNOWLEDGE TO CAREERS (K2C)
-              </h3>
+              <div className="mb-6 flex items-center justify-center gap-4">
+                <div className="h-px w-20 bg-gray-300" />
+                <h3 className="text-center text-xl font-bold text-gray-900">
+                  PSYCHOMETRICS
+                </h3>
+                <div className="h-px w-20 bg-gray-300" />
+              </div>
 
-              {/* K2C Flow */}
-              <div className="mb-6 flex items-center justify-center gap-4 text-center">
+              {/* Psychometrics Flow */}
+              <div className="mb-6 flex flex-wrap items-center justify-center gap-6 text-center">
                 <div className="text-gray-700">
-                  <div className="mb-2 text-2xl">🏫</div>
-                  <p className="text-sm font-semibold">Schools</p>
+                  <Brain className="mx-auto mb-2 h-7 w-7 text-blue-600" />
+                  <p className="text-sm font-semibold">Aptitude Signals</p>
                 </div>
-                <div className="text-gray-400">→</div>
+
+                <ChevronRight className="h-5 w-5 text-gray-400" />
+
                 <div className="text-gray-700">
-                  <div className="mb-2 text-2xl">🎓</div>
-                  <p className="text-sm font-semibold">Colleges</p>
+                  <LineChart className="mx-auto mb-2 h-7 w-7 text-blue-600" />
+                  <p className="text-sm font-semibold">Readiness Index</p>
                 </div>
-                <div className="text-gray-400">→</div>
+
+                <ChevronRight className="h-5 w-5 text-gray-400" />
+
                 <div className="text-gray-700">
-                  <div className="mb-2 text-2xl">👥</div>
-                  <p className="text-sm font-semibold">Careers</p>
+                  <Target className="mx-auto mb-2 h-7 w-7 text-blue-600" />
+                  <p className="text-sm font-semibold">Guided Decisions</p>
                 </div>
               </div>
 
-              {/* K2C Benefits */}
+              {/* PSYCHOMETRICS Benefits */}
               <div className="space-y-3 border-t border-gray-200 pt-4">
                 <div className="flex gap-3">
-                  <div className="flex-shrink-0 text-gray-600">■</div>
+                  <div className="shrink-0 text-gray-600">■</div>
                   <p className="text-sm text-gray-700">
-                    Integrated academic & career ecosystem from K-12 to
-                    University to Careers
+                    Data-driven readiness signals that reveal aptitude,
+                    stability, and decision confidence.
                   </p>
                 </div>
                 <div className="flex gap-3">
-                  <div className="flex-shrink-0 text-gray-600">■</div>
+                  <div className="shrink-0 text-gray-600">■</div>
                   <p className="text-sm text-gray-700">
-                    Continuity of intelligence across critical transitions
+                    Empowering institutions with early insights for mentoring,
+                    placement, and career alignment.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Accreditation Column */}
+            {/* INCUBATOR */}
             <div className="rounded-lg border border-gray-200 p-6 sm:p-8">
-              <h3 className="mb-6 text-center text-xl font-bold text-gray-900">
-                ACCREDITATION & GOVERNANCE
-              </h3>
+              <div className="mb-6 flex items-center justify-center gap-4">
+                <div className="h-px w-20 bg-gray-300" />
+                <h3 className="text-center text-xl font-bold text-gray-900">
+                  INCUBATORS
+                </h3>
+                <div className="h-px w-20 bg-gray-300" />
+              </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
-                {/* Accreditation Card */}
+                {/* STUDDENT Card */}
                 <div className="rounded-lg border border-gray-300 bg-gray-50 p-4 text-center">
-                  <ClipboardCheck className="mx-auto mb-3 h-8 w-8 text-gray-600" />
+                  <Lightbulb className="mx-auto mb-3 h-8 w-8 text-gray-600" />
                   <h4 className="mb-2 font-semibold text-gray-900">
-                    Accreditation Readiness
+                    Student Startup Incubator
                   </h4>
                   <p className="text-xs text-gray-600">
-                    Ensuring compliance and institutional quality
+                    Supporting student-led innovations through structured
+                    mentoring, readiness evaluation, and funding pathways.
                   </p>
                 </div>
 
-                {/* Governance Card */}
+                {/* FACULLTY Card */}
                 <div className="rounded-lg border border-gray-300 bg-gray-50 p-4 text-center">
-                  <BarChart3 className="mx-auto mb-3 h-8 w-8 text-gray-600" />
+                  <Microscope className="mx-auto mb-3 h-8 w-8 text-gray-600" />
                   <h4 className="mb-2 font-semibold text-gray-900">
-                    Governance Dashboards
+                    Faculty & Research Incubator
                   </h4>
                   <p className="text-xs text-gray-600">
-                    Management visibility on outcomes & analytics
+                    Enabling faculty-driven research and ventures with
+                    institutional backing, industry linkage, and grant-readiness
+                    intelligence.
                   </p>
                 </div>
               </div>

@@ -63,7 +63,7 @@ const Header = () => {
             max-[480px]:max-w-[260px]
             ${isMenuOpen ? 'max-[968px]:left-0' : 'max-[968px]:-left-full'}
           `}>
-            {['Home', 'About', 'School', 'StudentsAndParents','Contact'].map((item) => (
+            {['Home', 'About', 'School', 'Students&Parents','College&University','Contact'].map((item) => (
               <li key={item} className="relative w-full min-[969px]:w-auto">
                 <Link 
                   to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} 
@@ -76,7 +76,7 @@ const Header = () => {
             ))}
 
             {/* Mobile Contact Section */}
-            <li className="hidden max-[968px]:block border-t border-gray-200 mt-8 pt-8 w-full">
+            {/* <li className="hidden max-[968px]:block border-t border-gray-200 mt-8 pt-8 w-full">
               <div className="flex items-center gap-[0.6rem] py-[0.9rem] px-4 text-gray-700 text-[0.95rem] font-medium mb-6 bg-[#0F4C81]/[0.06] rounded-lg border-l-4 border-[#0F4C81]">
                 <MapPin size={18} className="text-[#0F4C81] shrink-0" />
                 <span>Bengaluru, India</span>
@@ -88,11 +88,11 @@ const Header = () => {
                   </a>
                 ))}
               </div>
-            </li>
+            </li> */}
           </ul>
 
           {/* Desktop Right Side */}
-          <div className="flex items-center gap-6 shrink-0 max-[968px]:hidden min-[969px]:max-[1024px]:gap-4">
+          {/* <div className="flex items-center gap-6 shrink-0 max-[968px]:hidden min-[969px]:max-[1024px]:gap-4">
             <div className="flex items-center gap-[0.4rem] text-gray-700 text-[0.9rem] font-medium">
               <MapPin className="text-[#0F4C81]" size={18} />
               <span className="whitespace-nowrap min-[969px]:max-[1024px]:hidden">Bengaluru, India</span>
@@ -104,7 +104,7 @@ const Header = () => {
                 </a>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Hamburger Button */}
           <button

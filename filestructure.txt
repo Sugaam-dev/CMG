@@ -13,6 +13,7 @@
         |-- Footer.jsx
         |-- Header.jsx
         |-- Hero.jsx
+        |-- WhatsAppButton.jsx
     |-- index.css
     |-- layouts
         |-- RootLayout.jsx
@@ -22,6 +23,9 @@
             |-- About.jsx
         |-- collegeuniversity
             |-- Collegeanduniversitypage.jsx
+            |-- images
+                |-- graphimage.png
+                |-- tattvacampus.png
         |-- contactUS
             |-- Contact.jsx
         |-- home
@@ -32,6 +36,8 @@
                 |-- teacher-faculty.jpg
                 |-- university-building.jpg
         |-- schools
+            |-- images
+                |-- graphimage.png
             |-- Schoolpage.jsx
         |-- studentsandparents
             |-- StudentsAndParents.jsx
