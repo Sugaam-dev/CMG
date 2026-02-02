@@ -4,6 +4,7 @@ import schoolImage from "./images/school-building.jpg";
 import universityImage from "./images/university-building.jpg";
 import studentsImage from "./images/students-parents.jpg";
 import teacherImage from "./images/teacher-faculty.jpg";
+import HeroSection from "../../components/Hero";
 
 const cardsData = [
   {
@@ -64,6 +65,7 @@ const cardsData = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f8f5f5]">
+      <HeroSection/>
       {/* Hero Section */}
       <section className="flex min-h-[50vh] items-center justify-center bg-[#f8f5f5] px-4 py-16">
         <div className="w-full max-w-3xl text-center">

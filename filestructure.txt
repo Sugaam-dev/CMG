@@ -40,5 +40,6 @@
                 |-- graphimage.png
             |-- Schoolpage.jsx
         |-- studentsandparents
+            |-- CenterCardForm.jsx
             |-- StudentsAndParents.jsx
 |-- vite.config.js
