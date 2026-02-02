@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Facebook } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -22,14 +22,14 @@ export default function Footer() {
               </a>
               <span className="text-white/50">|</span>
               <a
-                href="/schools"
+                href="/school"
                 className="transition-opacity hover:opacity-80"
               >
                 Schools
               </a>
               <span className="text-white/50">|</span>
               <a
-                href="/universities"
+                href="/College&University"
                 className="transition-opacity hover:opacity-80"
               >
                 Universities
@@ -53,21 +53,21 @@ export default function Footer() {
                 className="transition-opacity hover:opacity-80"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={20} />
+                <FaLinkedinIn size={20} />
               </a>
               <a
                 href="https://twitter.com"
                 className="transition-opacity hover:opacity-80"
                 aria-label="Twitter"
               >
-                <Twitter size={20} />
+                <FaTwitter size={20} />
               </a>
               <a
                 href="https://facebook.com"
                 className="transition-opacity hover:opacity-80"
                 aria-label="Facebook"
               >
-                <Facebook size={20} />
+                <FaFacebookF size={20} />
               </a>
             </div>
           </div>
