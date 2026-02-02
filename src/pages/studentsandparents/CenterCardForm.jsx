@@ -20,6 +20,16 @@ export default function CenterCardForm() {
 
   return (
     <div className="w-full max-w-xl rounded-2xl bg-white p-8 shadow-xl">
+
+          {/* Heading */}
+      <div className="mb-6 text-center">
+        <h2 className="text-2xl font-semibold text-slate-900">
+          Connect to Us
+        </h2>
+        <p className="mt-1 text-sm text-slate-500">
+          Share your details and we’ll reach out shortly
+        </p>
+      </div>
       <form onSubmit={handleSubmit} className="space-y-6">
         
         <div className="flex flex-col gap-2">

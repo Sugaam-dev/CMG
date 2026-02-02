@@ -181,9 +181,9 @@ export default function StudentsAndParents() {
           </div>
         </div>
       </section>
-      <div className="min-h-screen w-full flex items-center justify-center bg-slate-100 px-4">
-  <CenterCardForm />
-</div>
+                <div className="min-h-screen w-full flex items-center justify-center bg-slate-100 px-4">
+            <CenterCardForm />
+          </div>
 
     </main>
   );

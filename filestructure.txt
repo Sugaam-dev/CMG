@@ -31,6 +31,9 @@
         |-- home
             |-- Home.jsx
             |-- images
+                |-- hero.png
+                |-- hero1.png
+                |-- hero2.png
                 |-- school-building.jpg
                 |-- students-parents.jpg
                 |-- teacher-faculty.jpg
