@@ -84,7 +84,7 @@ export default function Contact() {
                   <option value="" disabled>
                     Select organization type
                   </option>
-                  <option value="students">Students</option>
+                  <option value="students">Student</option>
                   <option value="parents">Parents</option>
                   <option value="school">School</option>
                   <option value="college">College</option>
