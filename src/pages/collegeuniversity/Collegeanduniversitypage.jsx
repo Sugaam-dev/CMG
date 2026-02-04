@@ -177,17 +177,17 @@ export default function CollegeUniversityPage() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-2">
             {/* K2C Column */}
-            <div className="rounded-lg border border-gray-200 p-6 sm:p-8">
+            <div className="rounded-lg border border-gray-200 p-4 sm:p-6 md:p-8">
               <div className="mb-6 flex items-center justify-center gap-4">
-                <div className="h-px w-20 bg-gray-300" />
+                <div className="h-px w-12 sm:w-16 md:w-20 bg-gray-300" />
                 <h3 className="text-center text-xl font-bold text-gray-900">
                   KNOWLEDGE TO CAREERS (K2C)
                 </h3>
-                <div className="h-px w-20 bg-gray-300" />
+                <div className="h-px w-12 sm:w-16 md:w-20 bg-gray-300" />
               </div>
 
               {/* K2C Flow */}
-              <div className="mb-6 flex flex-wrap items-center justify-center gap-6 text-center">
+              <div className="mb-6 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-center">
                 <div className="text-gray-700">
                   <BookOpen className="mx-auto mb-2 h-7 w-7 text-red-600" />
                   <p className="text-sm font-semibold">Knowledge</p>
@@ -227,16 +227,16 @@ export default function CollegeUniversityPage() {
             </div>
 
             {/* Accreditation Column */}
-            <div className="rounded-lg border border-gray-200 p-6 sm:p-8">
+            <div className="rounded-lg border border-gray-200 p-4 sm:p-6 md:p-8">
               <div className="mb-6 flex items-center justify-center gap-4">
-                <div className="h-px w-20 bg-gray-300" />
+                <div className="h-px w-12 sm:w-16 md:w-20 bg-gray-300" />
                 <h3 className="text-center text-xl font-bold text-gray-900">
                   ACCREDITATION & GOVERNANCE
                 </h3>
-                <div className="h-px w-20 bg-gray-300" />
+                <div className="h-px w-12 sm:w-16 md:w-20 bg-gray-300" />
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
                 {/* Accreditation Card */}
                 <div className="rounded-lg border border-gray-300 bg-gray-50 p-4 text-center">
                   <ClipboardCheck className="mx-auto mb-3 h-8 w-8 text-gray-600" />
@@ -282,17 +282,17 @@ export default function CollegeUniversityPage() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-2">
             {/* PSYCHOMETRICS */}
-            <div className="rounded-lg border border-gray-200 p-6 sm:p-8">
+            <div className="rounded-lg border border-gray-200 p-4 sm:p-6 md:p-8">
               <div className="mb-6 flex items-center justify-center gap-4">
-                <div className="h-px w-20 bg-gray-300" />
+                <div className="h-px w-12 sm:w-16 md:w-20 bg-gray-300" />
                 <h3 className="text-center text-xl font-bold text-gray-900">
                   PSYCHOMETRICS
                 </h3>
-                <div className="h-px w-20 bg-gray-300" />
+                <div className="h-px w-12 sm:w-16 md:w-20 bg-gray-300" />
               </div>
 
               {/* Psychometrics Flow */}
-              <div className="mb-6 flex flex-wrap items-center justify-center gap-6 text-center">
+              <div className="mb-6 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-center">
                 <div className="text-gray-700">
                   <Brain className="mx-auto mb-2 h-7 w-7 text-blue-600" />
                   <p className="text-sm font-semibold">Aptitude Signals</p>
@@ -333,18 +333,18 @@ export default function CollegeUniversityPage() {
             </div>
 
             {/* INCUBATOR */}
-            <div className="rounded-lg border border-gray-200 p-6 sm:p-8">
-              <div className="mb-6 flex items-center justify-center gap-4">
-                <div className="h-px w-20 bg-gray-300" />
-                <h3 className="text-center text-xl font-bold text-gray-900">
+            <div className="rounded-lg border border-gray-200 p-3 sm:p-4 md:p-6">
+              <div className="mb-3 sm:mb-4 md:mb-6 flex items-center justify-center gap-1 sm:gap-2 md:gap-3">
+                <div className="h-px w-6 sm:w-10 md:w-16 bg-gray-300 flex-shrink-0" />
+                <h3 className="text-center text-base sm:text-lg md:text-xl font-bold text-gray-900 whitespace-nowrap px-1">
                   INCUBATORS
                 </h3>
-                <div className="h-px w-20 bg-gray-300" />
+                  <div className="h-px w-6 sm:w-10 md:w-16 bg-gray-300 flex-shrink-0" />
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2">
                 {/* STUDDENT Card */}
-                <div className="rounded-lg border border-gray-300 bg-gray-50 p-4 text-center">
+                <div className="rounded-lg border border-gray-300 bg-gray-50 p-3 sm:p-4 text-center">
                   <Lightbulb className="mx-auto mb-3 h-8 w-8 text-gray-600" />
                   <h4 className="mb-2 font-semibold text-gray-900">
                     Student Startup Incubator
@@ -356,7 +356,7 @@ export default function CollegeUniversityPage() {
                 </div>
 
                 {/* FACULLTY Card */}
-                <div className="rounded-lg border border-gray-300 bg-gray-50 p-4 text-center">
+                <div className="rounded-lg border border-gray-300 bg-gray-50 p-3 sm:p-4 text-center">
                   <Microscope className="mx-auto mb-3 h-8 w-8 text-gray-600" />
                   <h4 className="mb-2 font-semibold text-gray-900">
                     Faculty & Research Incubator
