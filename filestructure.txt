@@ -10,6 +10,8 @@
 |-- src
     |-- App.css
     |-- App.jsx
+    |-- assets
+        |-- logo.png
     |-- components
         |-- Footer.jsx
         |-- Header.jsx
@@ -19,6 +21,7 @@
     |-- layouts
         |-- RootLayout.jsx
     |-- main.jsx
+    |-- Navbar.jsx
     |-- pages
         |-- about
             |-- About.jsx

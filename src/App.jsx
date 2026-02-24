@@ -7,6 +7,7 @@ import School from './pages/schools/Schoolpage';
 import Collegeanduniversitypage from './pages/collegeuniversity/Collegeanduniversitypage';
 import StudentsAndParents from './pages/studentsandparents/StudentsAndParents';
 import Contact from './pages/contact/Contact';
+import Navbar from './Navbar';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                    <Route path='College&University' element={<Collegeanduniversitypage/>} />
                     <Route path='students&parents' element={<StudentsAndParents/>} />
                     <Route path='contact' element={<Contact/>} />
+                    <Route path='nav' element={<Navbar/>} />
 
           </Route>
         </Routes>
